@@ -1,0 +1,89 @@
+/* ===== inicio.css ===== */
+
+/* HERO */
+.hero {
+  position: relative;
+  background: url("../img/hero/hero.png") center/cover no-repeat;
+  color: #fff;
+  min-height: 450px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.hero .overlay {
+  background-color: rgba(8, 78, 158, 0.6);
+  position: absolute;
+  top: 0; left: 0;
+  right: 0; bottom: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 50%;
+  padding: 2rem;
+}
+
+/* Categorias */
+.categoria-card {
+  text-align: center;
+  padding: 20%;
+  border-radius: 12px;
+  color: #000;
+  font-weight: 600;
+  height: 220px;                
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s;
+}
+
+.categoria-card img {
+  width: 160px;     
+  height: auto;    
+  object-fit: contain;  
+}
+
+.categoria-card:hover {
+  transform: translateY(-5px);  
+}
+
+.bg-azul { background-color: #dbeafe; }
+.bg-amarelo { background-color: #f9d699; }
+.bg-bege { background-color: #fef3c7; }
+
+
+/* Delivery / Retirada */
+.servico {
+  position: relative;
+  min-height: 240px;
+  border-radius: 14px;
+  overflow: hidden;
+  padding: 2rem;
+  box-shadow: 0 10px 24px rgba(0,0,0,.08);
+}
+
+.servico-content {
+  position: relative;
+  z-index: 2;
+  max-width: 55%;
+}
+
+.servico-delivery {
+  background-image: url("../img/itens_do_site/card1.png"),
+                    linear-gradient(#fde4cf, #fde4cf);
+  background-repeat: no-repeat, no-repeat;
+  background-size: 20% auto, 100% 100%;
+  background-position: right 18px bottom 10px, center;
+}
+
+.servico-retirada {
+  background-image: url("../img/itens_do_site/card2.png"),
+                    linear-gradient(#dbeafe, #dbeafe);
+  background-repeat: no-repeat, no-repeat;
+  background-size: 44% auto, 100% 100%;
+  background-position: right 12px bottom 0, center;
+}
+
